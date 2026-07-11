@@ -1,11 +1,11 @@
-# 🏦 Credit Risk Modeling using Machine Learning
+#  Credit Risk Modeling using Machine Learning
 
 
 <p align="center">
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 Credit risk assessment is one of the most important applications of Machine Learning in the banking and financial industry.
 
@@ -17,7 +17,7 @@ This project follows an industry-standard workflow from raw data to a production
 
 ---
 
-# 🎯 Business Problem
+#  Business Problem
 
 Banks receive thousands of loan applications every day.
 
@@ -29,7 +29,7 @@ The objective is to build a predictive model that helps financial institutions m
 
 ---
 
-# 🎯 Project Objective
+#  Project Objective
 
 Develop a Machine Learning model capable of predicting:
 
@@ -113,7 +113,7 @@ Credit-Risk-Modeling
 
 ---
 
-# 🔄 Machine Learning Workflow
+#  Machine Learning Workflow
 
 ```
 Business Understanding
