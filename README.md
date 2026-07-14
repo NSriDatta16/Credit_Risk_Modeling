@@ -33,8 +33,8 @@ The objective is to build a predictive model that helps financial institutions m
 
 Develop a Machine Learning model capable of predicting:
 
-* **0 → No Default**
-* **1 → Default**
+* **0 → No Default.**
+* **1 → Default.**
 
 using borrower information such as:
 
