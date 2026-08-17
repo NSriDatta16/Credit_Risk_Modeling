@@ -1,0 +1,13 @@
+.git
+.github
+.gitignore
+README.md
+LICENSE
+notebooks
+__pycache__
+*.pyc
+*.pyo
+.ipynb_checkpoints
+.venv
+venv
+.env
