@@ -28,6 +28,27 @@ jobs:
           docker logs credit-risk-api
           exit 1
 
+      - name: Test prediction endpoint
+        run: |
+          response=$(curl --fail --silent --show-error \
+            -X POST http://127.0.0.1:5000/predict \
+            -H "Content-Type: application/json" \
+            -d '{
+              "person_age": 30,
+              "person_income": 75000,
+              "person_home_ownership": "RENT",
+              "person_emp_length": 5,
+              "loan_intent": "PERSONAL",
+              "loan_grade": "B",
+              "loan_amnt": 10000,
+              "loan_int_rate": 10.5,
+              "loan_percent_income": 0.133,
+              "cb_person_default_on_file": "N",
+              "cb_person_cred_hist_length": 8
+            }')
+          echo "$response"
+          echo "$response" | python -c "import json,sys; d=json.load(sys.stdin); assert 'default_probability' in d; assert 'risk_level' in d; assert d['risk_level'] in {'LOW','MEDIUM','HIGH'}"
+
       - name: Container logs
         if: always()
         run: docker logs credit-risk-api
