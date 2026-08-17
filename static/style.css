@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #172033; }
+.container { max-width: 760px; margin: 40px auto; padding: 28px; background: white; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+input, button { padding: 12px; border: 1px solid #ccd3df; border-radius: 8px; font-size: 14px; }
+button { grid-column: 1 / -1; cursor: pointer; background: #172033; color: white; border: 0; }
+pre { margin-top: 20px; padding: 16px; background: #f0f2f6; border-radius: 8px; white-space: pre-wrap; }
+@media (max-width: 650px) { form { grid-template-columns: 1fr; } }
